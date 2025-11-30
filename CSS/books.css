@@ -1,0 +1,450 @@
+/* ===================================
+   BOOKS HERO SECTION
+   =================================== */
+.books-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 120px 5% 80px;
+  text-align: center;
+}
+
+.breadcrumb {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: var(--primary-light);
+}
+
+/* ===================================
+   BOOK DETAIL SECTION
+   =================================== */
+.book-detail {
+  padding: 6rem 5% 4rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.book-layout-reverse {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.book-cover-section {
+  position: sticky;
+  top: 120px;
+}
+
+.book-cover-wrapper {
+  text-align: center;
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin-bottom: 2rem;
+}
+
+.book-cover:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(157, 78, 221, 0.4);
+}
+
+.book-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.book-actions .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ===================================
+   BOOK INFO SECTION
+   =================================== */
+.book-info-section {
+  padding-top: 2rem;
+}
+
+.book-label {
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.book-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--primary-light);
+}
+
+.book-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(157, 78, 221, 0.05);
+  border-radius: 15px;
+  border-left: 4px solid var(--primary);
+}
+
+.book-meta span {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.book-meta strong {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+.book-description {
+  margin-bottom: 3rem;
+}
+
+.book-description h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.book-description p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* ===================================
+   BOOK THEMES
+   =================================== */
+.book-themes h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.themes-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.themes-list li {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.themes-list li:hover {
+  border-color: var(--primary);
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(157, 78, 221, 0.2);
+}
+
+.theme-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.themes-list strong {
+  display: block;
+  color: var(--primary-light);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.themes-list p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===================================
+   PREVIEW SECTION
+   =================================== */
+.preview-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(157, 78, 221, 0.03) 50%, transparent 100%);
+  padding: 4rem 5%;
+}
+
+.pdf-viewer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pdf-viewer-container iframe {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.preview-notice {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(157, 78, 221, 0.1);
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+}
+
+.preview-notice p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.preview-notice a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.preview-notice a:hover {
+  color: var(--primary-light);
+}
+
+/* ===================================
+   BOOK DIVIDER
+   =================================== */
+.book-divider {
+  max-width: 1200px;
+  margin: 4rem auto;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+/* ===================================
+   AUTHOR'S NOTE SECTION
+   =================================== */
+.author-note-section {
+  padding: 6rem 5%;
+  background: linear-gradient(135deg, rgba(157, 78, 221, 0.05), rgba(123, 44, 191, 0.02));
+}
+
+.author-note {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+  background: var(--bg-card);
+  border-radius: 30px;
+  border: 2px solid rgba(157, 78, 221, 0.2);
+  position: relative;
+}
+
+.note-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.author-note h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-light);
+}
+
+.author-note p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.author-signature {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* ===================================
+   RELATED WORK
+   =================================== */
+.related-work {
+  padding: 4rem 5%;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.related-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  background: var(--bg-card);
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
+}
+
+.related-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(157, 78, 221, 0.2);
+}
+
+.related-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.related-card:hover img {
+  transform: scale(1.05);
+}
+
+.related-content {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.related-content h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.related-content p {
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.related-arrow {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: transform 0.3s ease;
+}
+
+.related-card:hover .related-arrow {
+  transform: translateY(-50%) translateX(5px);
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+@media (max-width: 1024px) {
+  .book-layout,
+  .book-layout-reverse {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .book-cover-section {
+    position: static;
+  }
+
+  .book-detail-reverse .book-cover-section {
+    order: 1;
+  }
+
+  .book-detail-reverse .book-info-section {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .books-hero {
+    min-height: 50vh;
+    padding: 100px 5% 60px;
+  }
+
+  .book-detail {
+    padding: 4rem 5% 2rem;
+  }
+
+  .book-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .author-note {
+    padding: 2rem 1.5rem;
+  }
+
+  .author-note h2 {
+    font-size: 1.5rem;
+  }
+
+  .pdf-viewer-container iframe {
+    height: 600px !important;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-title {
+    font-size: 1.8rem;
+  }
+
+  .book-cover {
+    max-width: 300px;
+  }
+
+  .pdf-viewer-container iframe {
+    height: 500px !important;
+  }
+
+  .themes-list li {
+    padding: 1rem;
+  }
+}

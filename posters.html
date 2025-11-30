@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería completa de diseños de pósters - Jhair Ayala">
+  <title>Poster Gallery | Jhair Ayala</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/posters.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">JA</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#books">Books</a></li>
+        <li><a href="index.html#posters">Posters</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero-small">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-label">Visual Design</div>
+      <h1 class="hero-title">Poster Gallery</h1>
+      <p class="hero-subtitle">Exploring color theory, composition, and visual storytelling</p>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="section">
+    <div class="intro-content">
+      <p class="intro-text">
+        My posters are the result of combining design knowledge, color theory,
+        and digital tools such as Photoshop and Illustrator. Each poster explores
+        different themes and styles, showcasing my growth as a multimedia creator
+        and my passion for visual communication.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Poster 1 -->
+  <section class="poster-featured">
+    <div class="poster-featured-container">
+      <img src="Images/Call of the night.png" alt="Call of the Night - Featured Poster">
+      <div class="poster-info">
+        <h2>Call of the Night</h2>
+        <div class="poster-tags">
+          <span class="tag">Manga-Inspired</span>
+          <span class="tag">Character Design</span>
+          <span class="tag">Night Aesthetic</span>
+        </div>
+        <p>
+          This poster explores manga-inspired style and composition, featuring 
+          dramatic lighting and urban nightscape elements. It was the starting 
+          point for my experimentation in visual storytelling through poster design.
+        </p>
+        <div class="poster-details">
+          <div class="detail-item">
+            <strong>Year:</strong> 2025
+          </div>
+          <div class="detail-item">
+            <strong>Tools:</strong> Photoshop, Illustrator
+          </div>
+          <div class="detail-item">
+            <strong>Style:</strong> Digital Illustration
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Poster 2 -->
+  <section class="poster-featured poster-featured-reverse">
+    <div class="poster-featured-container">
+      <div class="poster-info">
+        <h2>Conjuro</h2>
+        <div class="poster-tags">
+          <span class="tag">Abstract</span>
+          <span class="tag">Color Theory</span>
+          <span class="tag">Mystical</span>
+        </div>
+        <p>
+          This second highlighted poster focuses on abstract composition and 
+          vibrant color palettes, experimenting with contrast and visual rhythm. 
+          The design incorporates mystical elements with a modern twist.
+        </p>
+        <div class="poster-details">
+          <div class="detail-item">
+            <strong>Year:</strong> 2025
+          </div>
+          <div class="detail-item">
+            <strong>Tools:</strong> Photoshop
+          </div>
+          <div class="detail-item">
+            <strong>Style:</strong> Abstract Composition
+          </div>
+        </div>
+      </div>
+      <img src="Images/conjuro.png" alt="Conjuro - Featured Poster">
+    </div>
+  </section>
+
+  <!-- Full Gallery -->
+  <section class="section gallery-section">
+    <div class="section-header">
+      <h2 class="section-title">Complete Collection</h2>
+      <p class="section-description">Browse through my entire poster design portfolio</p>
+    </div>
+
+    <!-- Filter Buttons (opcional) -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="anime">Anime</button>
+      <button class="filter-btn" data-filter="abstract">Abstract</button>
+      <button class="filter-btn" data-filter="vintage">Vintage</button>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-category="anime">
+        <img src="Images/Call of the night.png" alt="Call of the Night">
+        <div class="gallery-overlay">
+          <h3>Call of the Night</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="Images/Peonias.png" alt="Peonias">
+        <div class="gallery-overlay">
+          <h3>Peonias</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="Images/Tears.png" alt="Tears">
+        <div class="gallery-overlay">
+          <h3>Tears</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="vintage">
+        <img src="Images/Army navy.png" alt="Army Navy">
+        <div class="gallery-overlay">
+          <h3>Army Navy</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="Images/conjuro.png" alt="Conjuro">
+        <div class="gallery-overlay">
+          <h3>Conjuro</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="Images/Dante.png" alt="Dante">
+        <div class="gallery-overlay">
+          <h3>Dante</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="anime">
+        <img src="Images/Evangelion.png" alt="Evangelion">
+        <div class="gallery-overlay">
+          <h3>Evangelion</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="vintage">
+        <img src="Images/Miata.png" alt="Miata">
+        <div class="gallery-overlay">
+          <h3>Miata</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="vintage">
+        <img src="Images/StarWarsNoir.png" alt="Star Wars Noir">
+        <div class="gallery-overlay">
+          <h3>Star Wars Noir</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="Images/Till I found her.png" alt="Till I Found Her">
+        <div class="gallery-overlay">
+          <h3>Till I Found Her</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="abstract">
+        <img src="Images/Tiramisu.png" alt="Tiramisu">
+        <div class="gallery-overlay">
+          <h3>Tiramisu</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section cta-section">
+    <div class="cta-content">
+      <h2>Interested in collaborating?</h2>
+      <p>Let's create something amazing together</p>
+      <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="index.html" class="btn btn-secondary" style="margin-bottom: 2rem;">Back to Portfolio</a>
+    <p style="color: var(--text-secondary);">© 2024 Jhair Ayala. All designs are original work.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/posters.js"></script>
+</body>
+</html>
